@@ -7,6 +7,9 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('bower_components/lodash/dist/lodash.js');
+  app.import('bower_components/ramda/dist/ramda.js');
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
