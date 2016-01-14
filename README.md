@@ -142,7 +142,55 @@ compose(compose(toUpperCase, head), reverse);
  Pointfree code can again, help us remove needless names and keep us concise and generic. Pointfree is a good litmus test for functional code as it lets us know we've got small functions that take input to output.
  ### Ramda Examples
  ```
+ /*****************************************
+      C O M P O S E  E X A M P L E
+******************************************/
+var _ = ramda;
+var P = PointFree;
+var map = P.fmap;
+var compose = P.compose;
+var Maybe = P.Maybe;
+var Identity = P.Id;
 
+var testFn = map(function(x){
+	return x+2;
+}, [2])
+// testFn.toString() => 4
+var result = Identity(2).map(R.add(1));
+console.log(testFn.toString() )
+
+// Use R.add(x,y) and map(f,x) to make a function that increments a value inside a functor
+var ex1 = map(_.add(1)); 
+assertDeepEqual(Identity(3), ex1(Identity(2)))
+
+// Use _.head to get the first element of the list
+var xs = Identity(['do', 'ray', 'me', 'fa', 'so', 'la', 'ti', 'do'])
+var ex2 = map(_.head)
+assertDeepEqual(Identity('do'), ex2(xs))
+
+// Use safeGet and _.head to find the first initial of the user
+var safeGet = _.curry(function(x,o){ return Maybe(o[x]) })
+var user = {id: 2, name: "Albert"}
+var ex3 = compose(map(_.head),safeGet('name'));
+assertDeepEqual(Maybe('A'), ex3(user))
+
+var ex4 = function(n) {
+	return Maybe( parseInt(n))
+}
+assertDeepEqual(Maybe(4), ex4("4"))
+
+// TEST HELPERS
+// =====================
+function inspectIt(x){
+  return (x.inspect && x.inspect()) || (x.toString && x.toString()) || x.valueOf(); //hacky for teachy.
+}
+
+function assertEqual(x,y){
+  if(x !== y){ throw("expected "+x+" to equal "+y); }
+}
+function assertDeepEqual(x,y){
+  if(x.val !== y.val) throw("expected "+inspectIt(x)+" to equal "+inspectIt(y));
+}
  ```
 
 
