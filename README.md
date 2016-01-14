@@ -1,11 +1,13 @@
-# Functional Javascript Exmples using Ramda in Ember
+# Functional Javascript Examples using Ramda in Ember
 ##Why not Underscore OR Lodash
 * Ramda  makes it easy to create functional pipelines, one that never mutates user data.
 * Ramda strives for performance. A reliable and quick implementation wins over any notions of functional purity.
 * Underscore and Lodash offers some functional concepts like map, filter and reduce. But they dont encourage functional style for composition, currying etc.
-References [pdf](http://sencjw.com/talks/js_is_for_functions.pdf) -  ,[video](https://www.youtube.com/watch?v=m3svKOdZijA)
 
-Reference Guide for [[Functional Javascript with Ramda](https://github.com/MostlyAdequate/mostly-adequate-guide/tree/69ebed50eded952a86082fb7ac745db7323d3e91)] 
+## Further Reading / Useful Links
+References [pdf](http://sencjw.com/talks/js_is_for_functions.pdf)  ,[video](https://www.youtube.com/watch?v=m3svKOdZijA)
+
+Reference Guide for [Functional Javascript with Ramda](https://github.com/MostlyAdequate/mostly-adequate-guide/tree/69ebed50eded952a86082fb7ac745db7323d3e91)
 
 ## Prerequisites
 
@@ -47,11 +49,5 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
-## Further Reading / Useful Links
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
