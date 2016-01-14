@@ -96,6 +96,10 @@ console.log(max([-21,-3483,-2,-1]));// => -1
 ```
 ## Types
 Types
+
+
+## Currying
+
 #Composing
 The composition of two functions returns a new function. This makes perfect sense: composing two units of some type (in this case function) should yield a new unit of that very type.
 ```
