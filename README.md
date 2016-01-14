@@ -3,9 +3,9 @@
 * Ramda  makes it easy to create functional pipelines, one that never mutates user data.
 * Ramda strives for performance. A reliable and quick implementation wins over any notions of functional purity.
 * Underscore and Lodash offers some functional concepts like map, filter and reduce. But they dont encourage functional style for composition, currying etc.
-References pdf - http://sencjw.com/talks/js_is_for_functions.pdf ,https://www.youtube.com/watch?v=m3svKOdZijA
+References [pdf](http://sencjw.com/talks/js_is_for_functions.pdf) -  ,[video](https://www.youtube.com/watch?v=m3svKOdZijA)
 
-Reference Guide for Functional Javascript with Ramda https://github.com/MostlyAdequate/mostly-adequate-guide/tree/69ebed50eded952a86082fb7ac745db7323d3e91
+Reference Guide for [[Functional Javascript with Ramda](https://github.com/MostlyAdequate/mostly-adequate-guide/tree/69ebed50eded952a86082fb7ac745db7323d3e91)] 
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 * `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your app at [http://localhost:4200/tests](http://localhost:4200/tests).
 
 ### Code Generators
 
