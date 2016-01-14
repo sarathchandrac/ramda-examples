@@ -11,7 +11,7 @@
   1. [Composing](#Composing)
   1. [Objects](#objects)
 
-## Currying
+##Currying
 The concept is simple: You can call a function with fewer arguments than it expects. It returns a function that takes the remaining arguments.+
 Sign in to comment
 
@@ -94,7 +94,7 @@ console.log(max([1,-3483,9,7,2])); // => 9
 console.log(max([-21,-3483,-2,-1]));// => -1
 ```
 
-##Composing
+#Composing
 The composition of two functions returns a new function. This makes perfect sense: composing two units of some type (in this case function) should yield a new unit of that very type.
 ```
 var compose = function(f,g) {
