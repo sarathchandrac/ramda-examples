@@ -8,7 +8,6 @@
 ## Table of Contents
 
   1. [Currying](#currying)
-  1. [Types](#types)
   1. [Composing](#composing)
 
 ## Currying
@@ -93,8 +92,6 @@ var max = R.reduce(greater,-Infinity);
 console.log(max([1,-3483,9,7,2])); // => 9
 console.log(max([-21,-3483,-2,-1]));// => -1
 ```
-## Types
-Types
 
 
 
