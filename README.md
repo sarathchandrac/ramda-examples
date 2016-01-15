@@ -30,7 +30,7 @@ increment(2);
 addTen(2);
 // 12
 ```
-### Ramda Examples
+### Ramda Examples :: [gist](https://gist.github.com/anonymous/6bb74bd811af4ad56fe0)
 ```
 /*****************************************
       C U R R Y I N G  E X A M P L E
@@ -136,7 +136,7 @@ compose(compose(toUpperCase, head), reverse);
  
  ```
  Pointfree code can again, help us remove needless names and keep us concise and generic. Pointfree is a good litmus test for functional code as it lets us know we've got small functions that take input to output.
- ### Ramda Examples
+ ### Ramda Examples [gist](https://gist.github.com/anonymous/b7c09ddeff32a3edcf58)
  ```
  /*****************************************
       C O M P O S E  E X A M P L E
@@ -183,7 +183,7 @@ function inspectIt(x){
 
 function assertEqual(x,y){
   if(x !== y){ throw("expected "+x+" to equal "+y); }
-}
+}
 function assertDeepEqual(x,y){
   if(x.val !== y.val) throw("expected "+inspectIt(x)+" to equal "+inspectIt(y));
 }
