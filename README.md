@@ -136,7 +136,7 @@ compose(compose(toUpperCase, head), reverse);
  
  ```
  Pointfree code can again, help us remove needless names and keep us concise and generic. Pointfree is a good litmus test for functional code as it lets us know we've got small functions that take input to output.
- ### Ramda Examples [gist](https://gist.github.com/anonymous/b7c09ddeff32a3edcf58)
+### Ramda Examples :: [gist](https://gist.github.com/anonymous/b7c09ddeff32a3edcf58)
  ```
  /*****************************************
       C O M P O S E  E X A M P L E
