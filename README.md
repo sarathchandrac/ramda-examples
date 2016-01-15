@@ -11,8 +11,7 @@
   1. [Composing](#composing)
 
 ## Currying
-The concept is simple: You can call a function with fewer arguments than it expects. It returns a function that takes the remaining arguments.+
-Sign in to comment
+The concept is simple: You can call a function with fewer arguments than it expects. It returns a function that takes the remaining arguments.
 
 ```js
 var add = function(x) {
@@ -24,11 +23,19 @@ var add = function(x) {
 var increment = add(1);
 var addTen = add(10);
 
-increment(2);
-// 3
+// var add = function(10){
+//  return function(2) =====> addTen(2)
+//{ return 10+2;
+//};
+//};
 
 addTen(2);
 // 12
+
+increment(2);
+// 3
+
+
 ```
 ### Ramda Examples :: [gist](https://gist.github.com/anonymous/6bb74bd811af4ad56fe0)
 ```
