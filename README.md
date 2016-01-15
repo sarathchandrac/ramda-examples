@@ -1,18 +1,25 @@
-# Functional Javascript Examples using Ramda in Ember
-##Why not Underscore OR Lodash
+# Functional Javascript Examples using Ramda
+
+
+## Table of Contents
+
+  1. [Introduction](#intro)
+  1. [Currying](#currying)
+  1. [Composing](#composing)
+
+## Introduction
+* We'll want to represent our specific problem in terms of generic, composable bits and then exploit their properties. It will take a bit more discipline than the "anything goes" approach of imperative programming , but the payoff of working within a principled, mathematical framework will astound you.
+
+### Why not Underscore OR Lodash
 * Ramda  makes it easy to create functional pipelines, one that never mutates user data.
 * Ramda strives for performance. A reliable and quick implementation wins over any notions of functional purity.
 * Underscore and Lodash offers some functional concepts like map, filter and reduce. But they dont encourage functional style for composition, currying etc.
 
 
-## Table of Contents
 
-  1. [Currying](#currying)
-  1. [Composing](#composing)
 
 ## Currying
-The concept is simple: You can call a function with fewer arguments than it expects. It returns a function that takes the remaining arguments.+
-Sign in to comment
+The concept is simple: You can call a function with fewer arguments than it expects. It returns a function that takes the remaining arguments.
 
 ```js
 var add = function(x) {
@@ -30,7 +37,7 @@ increment(2);
 addTen(2);
 // 12
 ```
-### Ramda Examples :: [gist](https://gist.github.com/anonymous/6bb74bd811af4ad56fe0)
+### Ramda Examples :: [source](http://jsbin.com/dufewo)
 ```
 /*****************************************
       C U R R Y I N G  E X A M P L E
@@ -136,7 +143,7 @@ compose(compose(toUpperCase, head), reverse);
  
  ```
  Pointfree code can again, help us remove needless names and keep us concise and generic. Pointfree is a good litmus test for functional code as it lets us know we've got small functions that take input to output.
-### Ramda Examples :: [gist](https://gist.github.com/anonymous/b7c09ddeff32a3edcf58)
+### Ramda Examples :: [source](http://jsbin.com/yojoru)
  ```
  /*****************************************
       C O M P O S E  E X A M P L E
