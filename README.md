@@ -19,7 +19,7 @@
 
 
 ## Currying
-The concept is simple: You can call a function with fewer arguments than it expects. It returns a function that takes the remaining arguments.
+The concept is simple: You can call a function with fewer arguments than it expects. It returns a function that takes the remaining arguments. [examples](http://jsbin.com/puluwu)
 
 ```js
 var add = function(x) {
