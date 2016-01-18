@@ -1,4 +1,4 @@
-# Functional Javascript Examples using Ramda
+# Functional Javascript Training Guide
 
 
 ## Table of Contents
